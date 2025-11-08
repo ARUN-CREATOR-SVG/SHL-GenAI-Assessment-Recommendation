@@ -5,6 +5,8 @@ beautifulsoup4
 tqdm
 langchain
 langchain-community
+langchain-huggingface
+python-dotenv
 chromadb
 sentence-transformers
 fastapi

@@ -1,0 +1,12 @@
+pandas
+numpy
+requests
+beautifulsoup4
+tqdm
+langchain
+langchain-community
+chromadb
+sentence-transformers
+fastapi
+uvicorn
+streamlit

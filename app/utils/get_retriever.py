@@ -2,7 +2,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 
 
-def get_retriever(persist_directory: str = "chroma_shl_db"):
+def get_retriever(persist_directory: str):
     embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
     vectordb = Chroma(
@@ -15,7 +15,7 @@ def get_retriever(persist_directory: str = "chroma_shl_db"):
         search_kwargs={
             "k": 10,
             "fetch_k": 30,
-            "lambda_mult": 0.4,
+            "lambda_mult": 0.6,
             "score_threshold": 0.3
         }
     )

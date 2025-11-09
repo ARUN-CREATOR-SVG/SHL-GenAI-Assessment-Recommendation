@@ -9,7 +9,7 @@ app = FastAPI(
 )
 
 print("Loading Retriever...")
-retriever =get_retriever("app/chroma_shl_db")
+retriever =get_retriever("app/chroma_shl_db_2")
 print(" Retriever Loaded Successfully!")
 
 

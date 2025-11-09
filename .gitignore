@@ -1,3 +1,5 @@
 venv/
 .env
-app/chroma_shl_db/
+app/chroma_shl_db1/
+app/chroma_shl_db2/
+__pycache__/

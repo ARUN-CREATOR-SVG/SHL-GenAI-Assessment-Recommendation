@@ -7,7 +7,7 @@ langchain-community
 langchain-huggingface
 chromadb
 sentence-transformers==2.2.2
-torch==2.0.1+cpu
+torch==2.5.1+cpu
 transformers==4.38.0
 pandas
 tqdm

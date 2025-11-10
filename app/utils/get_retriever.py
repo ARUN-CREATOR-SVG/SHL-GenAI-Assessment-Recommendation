@@ -1,15 +1,16 @@
 import os
-from langchain_community.vectorstores import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
+from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEndpointEmbeddings
 
-load_dotenv() 
+load_dotenv()
 
 def get_retriever(persist_directory: str):
-    os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+    hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    embeddings = HuggingFaceEndpointEmbeddings(
+        model="sentence-transformers/paraphrase-MiniLM-L3-v2",
+        huggingfacehub_api_token=hf_token
     )
 
     vectordb = Chroma(
@@ -22,4 +23,5 @@ def get_retriever(persist_directory: str):
         search_kwargs={"k": 10, "fetch_k": 30, "lambda_mult": 0.6}
     )
 
+    print("Retriever initialized using Hugging Face Inference API")
     return retriever

@@ -1,16 +1,15 @@
-pandas
-numpy
-requests
-beautifulsoup4
-tqdm
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi
+uvicorn[standard]
 langchain
 langchain-community
 langchain-huggingface
-python-dotenv
 chromadb
-fastapi
-uvicorn
-streamlit
-openpyxl
-
-sentence-transformers
+sentence-transformers==2.2.2
+torch==2.0.1+cpu
+transformers==4.38.0
+pandas
+tqdm
+python-dotenv
+requests

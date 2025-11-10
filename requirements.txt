@@ -8,7 +8,6 @@ langchain-community
 langchain-huggingface
 python-dotenv
 chromadb
-sentence-transformers
 fastapi
 uvicorn
 streamlit

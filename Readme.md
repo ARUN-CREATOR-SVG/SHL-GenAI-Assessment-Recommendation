@@ -162,6 +162,6 @@ Deployed, scalable, and cost-free GenAI system
 
 Arun Singh
 💼 AI/ML & Data Science Enthusiast
-🔗 LinkedIn Profile
+🔗[ LinkedIn Profile](https://www.linkedin.com/in/arun-singh-7a7b9b289/)
 
-📧 arunsingh@example.com
+📧[ arunsingh@example.com](arunsin2212@gmail.com)
